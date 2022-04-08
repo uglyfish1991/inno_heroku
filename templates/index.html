@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ - Home
+{% endblock %}
+
+{% block body %}
+
+<body class="home animate-in">
+    {% endblock %}
+
+    {% block content %}
+    <h1>Welcome to the Open Ocean</h1>
+    <h5>"The sea, once it casts its spell, holds one in its net of wonder forever"</h5>
+    <div class="inner">
+        <hr>
+        <img src="{{url_for('static', filename = 'images/diver.jpg')}}">
+        <p class="center">Human beings have achieved many feats over the years. We've climbed mountains, crossed deserts, circumnavigated the globe, and even walked on the moon. We gather knowledge at an alarming rate, always progressing and increasing our understanding of the world around us. But the depths of our oceans have always remained somewhat…mysterious. What exactly is down there? How do they live? How do they survive?<br>
+            It's time for us to find out!             
+        </p>
+
+
+    </div>
+    <script src="{{url_for('static', filename = 'script.js')}}"></script>
+    {% endblock %}

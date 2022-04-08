@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}
+- Epipelagic
+{% endblock %}
+
+{% block body %}
+
+<body class="epi animate-in">
+    {% endblock %}
+
+    {% block content %}
+    <h1>The Epipelagic</h1>
+    <h5>The Sunlight Zone | 0m - 200m Deep | Photic</h5>
+    <div class="inner">
+        <hr>
+        <div class="polaroidr">
+            <h4>Species Profile:</h4> <img src="{{url_for('static', filename = 'images/truewhale.png')}}" id="true"
+                alt="A True's Beaked Whale, swimming in the sea">
+            <hr>
+            <b>Name:</b>{{fish.name}}<br>
+            <b>Scientific Name:</b>{{fish.bio}}<br>
+            <b>Size:</b>{{fish.size}}<br>
+            <b>Diet:</b>{{fish.food}}<br>
+            <b>Features:</b>{{fish.feat}}<br>
+            <hr>
+        </div>
+        <p>The first and shallowest of the pelagic zones is the <b>epipelagic</b>. The <b>epipelagic</b> is the name
+            given to
+            the ocean layer less than 200m deep.
+        </p>
+
+        <p> The <b>epipelagic</b> is a photic zone - meaning that light can penetrate it and photosynthesis can occur.
+            The depths of the photic zone can be considered varying - in the murkiest waters, the photic zone can be
+            around 15m deep - but at its deepest it can reach 200m before it extends into the <a
+                href="{{url_for('meso_page')}}">mesopelagic</a>.
+        </p>
+        <p>Because the photic zone allows for photosynthesis, life is comparitaveley abundant. 95% of photosynthesis
+            occurs in the photic zone, and 90% of marine life reside there as a result. This life consists of
+            <b>autotrophs</b> - organisms which make their own energy and hetrotrophs - organisms which take energy from
+            others.
+        </p>
+
+        <p>
+            Autotrophs are organisms like phytoplankton - microscopic organisms that are suspended throughout the water column. They're individually too small to see, but sometimes they are present in such significant numbers they can been seen as a patch of colour. They start the pelagic food web - providing nutrition for zooplankton. Despite being so small, and making up only around 1% of the earth's total biomass, phytoplankton are responsible for nearly half of the globe's oxygen generation.
+        </p>
+
+        <p>As we move up the food chain, we see more species we are familiar with. Tiny zooplankton becomes food for slightly bigger cephalopods, which become food for larger fish, seals, sharks and whales. </p>
+        <p>The <b>epipelagic</b> is the most inconsistent of the the ocean zones. Whereas species in the lower zones are fairly specialised, <b>epipelagic</b> species can withstand a huge amount of variation in their environment. <b>Epipelagic</b> species have to deal with fluctuating temperatures depending on time, location, weather, dissolved oxygen and more. Nutrient and mineral levels and water chemistry can change - mainly due to human interference. Pollution is a huge issue. We are all well aware of turtles and seabirds eating plastic bags beliving them to be jellyfish. </p>
+        <p>
+            Despite living in light, colour still isn't particularly varied in the <b>epipelagic.</b> Unlike photic zones nearer the shores (like reefs) ocean dwelling creatures don't have much need for colour. For the most part, species are still fairly dull - grey, black, red or white. Some species are counter shaded, darker tops and paler underneaths. This means when they get looked down on, they blend in with the darkness beneath. But if they're spied from below, their white undersides blend in with the light above them, camouflaging them against the bright sun.
+        </p>
+        <div class="blockquote">
+            <h2> Did you know....?</h2>
+            <hr>
+            <img src="{{url_for('static', filename = 'images/baleen.jpg')}}" alt="A breeched baleen whale showing the baleen plates">
+            <h5>A Baleen Whale showing off</h5><hr>
+            <p>You may think that large animals like whales eat large prey - but this isn't the case for all things. While orcas might chase down substantial meals, some have evolved a different way of feeding. Baleen whales are carnivorous whales, but they feed on plankton. They use their baleen plates to sieve the creatures out from the seawater, consuming huge amounts of tiny things in one mouthful.</p>
+
+        </div>
+
+
+
+    </div>
+    <script src="{{url_for('static', filename = 'script.js')}}"></script>
+    {% endblock %}

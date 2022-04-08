@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block title %}
+- Bathypelagic
+{% endblock %}
+
+{% block body %}
+
+<body class="bathy animate-in">
+    {% endblock %}
+
+    {% block content %}
+    <h1>The Bathypelagic</h1>
+    <h5>The Midnight Zone | 1000m - 4000m Deep | Aphotic Zone</h5>
+    <div class="inner">
+        <hr>
+        <div class="polaroidr">
+            <h4>Species Profile:</h4> <img src="{{url_for('static', filename = 'images/jellyfish.png')}}" id="jelly" alt="A murky night vison photo, when you hover your mouse over it, a colossal squid can be seen">
+            <hr>
+            <b>Name: </b>{{fish.name}}<br>
+            <b>Scientific Name: </b>{{fish.bio}}<br>
+            <b>Size: </b>{{fish.size}}<br>
+            <b>Diet: </b>{{fish.food}}<br>
+            <b>Features: </b>{{fish.feat}}<br>
+            <hr>
+        </div>
+        <p>Where the ocean become dark, we reach the <b>bathypelagic</b>. The <b>bathypelagic</b> is the name given to
+            the ocean layer deeper than 1000m.
+        </p>
+
+        <p> The <b>bathypelagic</b> zone is aphotic - no sunlight penetrates this deep. Here, life is adapted to live in almost
+            total darkness with the only light occurring through boluminesence. No photosynthesis can take place here -
+            so the zone is devoid of plant life, or autotrophic species. Most predators are ambush preadtors. They can't expend huge amounts of energy chasing prey down and instead they lie in wait, for an opportune moment to strike. To aid this, many <b>bathypelagic</b> fish have extensible jaws, mouths capable of swallowing prey significantly bigger than themselves, and recurved teeth. <b>Bathypelagic</b> life that doesn't hunt instead
+            must rely on the detritus sinking down the water column from the higher photic zones. Food is so scarce that deep sea species cannot be picky eaters - and so they have very unspecialised diets and are able to extract energy from many food scources. </p>
+
+        <p>
+            <b>Bathypelagic</b> life is suited to the dark, cold, still environment. Some creatures grow huge eyes - barrel
+            eyes which are almost all pupil to allow in as much light as possible from any direction. Others have tiny
+            eyes, or no eyes at all. Evolution found a better purpose for that energy by giving them incredible senses
+            of feeling - allowing them to feel where movement came from. There is little current at these depths, certainly nothing comparable to the movement in the <a href="{{url_for('epi_page')}}">epipelagic</a>, but oxygen is brought into this layer thanks to <b>thermohaline circulation</b>. Because there is no need for sight, most fish are black or red, which appears black at this depth.        
+        </p>
+
+        <p>It's not just darkness that life down here has to contend with, the pressure is immense, and the temperature is almost always near-freezing. These hostile conditions are at least consistent. While life in the <a href="{{url_for('epi_page')}}">epipelagic</a> has to contend with fluctuating temperatures, storms, and dramatic changes in light, the <b>bathypelagic</b> is  always a bit...rubbish. This means the life here can remain high specialised - the conditions they must adapt to are unchanging. <b>Bathypelagic</b> life is typically </p>
+        
+        <p>To cope with the pressure, most fish have weak muscles, and their body compisition is mainly water - the material best at counteracting the forces of water is water. Many do not have swim bladders - they have no need to change their bouyancy. Their watery bodies keep them at the layer they need to be, maintaining a swim bladder would waste precious energy.</p>
+
+        <p>Fish are not the only marine creature though, and while <b>bathypelagic</b> fish aren't many, <b>bathypelagic</b> squid, sponges, sea stars, urchins and molluscs are more common than you might think. Even large whales like sperm whales may venture down into these depths, to hunt for one of the <b>bathypelagic's</b> most famous horrors....</p>
+
+        <p>As we get lower into the ocean, we see evidence of a phenomenon called <b>Deep Sea Gigantism</b> - deep sea species tend to be significantly larger than expected. Of course, as we mentioned, some species are small and weak. Others, for unknown reasons, reach immense sizes. Isopods, crabs, jellyfish and squid all become monsterous in the deep. Drifting between the lower <a href="{{url_for('meso_page')}}">mesopelagic</a> and the <b>bathypelagic</b> means we might encounter the terrifying Colossal Squid.</p>
+
+        <p>The squid, <b>Mesonychoteuthis hamiltoni</b> is a favourite prey of sperm whales - few other species would be large enough to do so! The squid can reach up to 14m in length, making it the largest known invertebrate. Some of the largest specimens have only been found as remains in sperm whales. Due to the hostile nature of the <b>bathypelagic</b>, the species is largely under-studied.</p>
+
+
+
+        <div class="blockquote">
+            <h2> Did you know....?</h2>
+            <hr>
+            <img src="{{url_for('static', filename = 'images/blob.jpg')}}" alt="A Blobfish as it would appear under the pressure of the deep">
+            <h5>Psychrolutes marcidus - a very famous species</h5><hr>
+            <p> You'll know of the species above - but you might never have seen it this way before! <b>Psychrolutes marcidus</b> is a very famous fish but you might expect him to look a bit more....squishy. Pictured above is the famous blobfish and how he actually appears at the pressure he evolved to withstand. He looks like a typical bony fish! Sadly, the pink fleshy mass with the comical sad face that we associate with him is a result of a blobfish being brought too quickly to the surface, and rupturing. </p>
+
+        </div>
+    </div>
+    <script src="{{url_for('static', filename = 'script.js')}}"></script>
+
+    {% endblock %}

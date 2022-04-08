@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}
+- Mesopelagic
+{% endblock %}
+
+{% block body %}
+
+<body class=" meso animate-in"  id="particle-frame">
+    {% endblock %}
+
+    {% block content %}
+    <h1>The Mesopelagic</h1>
+    <h5>The Twilight Zone | 200m - 1000m Deep | Dysphotic Zones</h5>
+    <div class="inner">
+        <hr>
+        <div class="polaroidr">
+            <h4>Species Profile:</h4> <img src="{{url_for('static', filename = 'images/anglerfish.png')}}" id="angler" alt="a glow over the sea, when you hover your mouse over it, an angler fish appears with sharp teeth">
+            <hr>
+            <b>Name: </b>{{fish.name}}<br>
+            <b>Scientific Name: </b>{{fish.bio}}<br>
+            <b>Size: </b>{{fish.size}}<br>
+            <b>Diet: </b>{{fish.food}}<br>
+            <b>Features: </b>{{fish.feat}}<br>
+            <hr>
+        </div>
+        <p>As we dive down deeper, we reach the <b>mesopelagic</b>. The <b>mesopelagic</b> is the name given to
+            the ocean layer between 200m - 1000m.
+        </p>
+
+        <p> The mesopelagic is defined by light. At its shallowest, 1% of incident light can penetrate - but at its deepest, light stops being able to pass through and the <a href="{{url_for('bathy_page')}}">bathypelagic</a> begins. Despite the darkness, the mesopelagic zone is home to a wide variety of marine life, adapted to this unusual environment.</p>
+        
+        <p>
+            Life in the mesopelagic zone is very different to higher layers. Due to the low levels of light, photosynthesis does not take place in the mesopelagic zone. Almost everything here is a predator, and adapted to be so. Those that aren't rely on waste falling from the <a href="{{url_for('epi_page')}}">epipelagic</a>. The Vampire Squid, Vampyroteuthis infernalis, prefers to stay where it is, and catches food that falls from above with its incredible tentacles. It has no predatory instincts at all, and simply feeds opportunistically. The Vampire Squid isn't a squid, or an octopus, but is a unique animal totally adapted to the mesopelagic zone. <br>
+            Species may take part in <a href="#diel">vertical migrations</a> and actively swim upwards towards the epipelagic to feed. Zooplankton within the <b>mesopelagic zone</b> will struggle to find enough food within that layer. A small amount would scatter down from upper levels, but not nearly enough to sustain them. Instead, the zooplankton, like euphausiid shrimp, take place in a worldwide phenomenon – a diel vertical migration. Of a night, the zooplankton will move upwards in the water column to feed of phytoplankton in epipelagic zones. The zooplankton, used to the darker zones, retreat back to the mesopelagic zone as daylight breaks – creating a worldwide wave of zooplankton moving through ocean layers as the Earth spins.</p> <p>
+            There are a few generalisations in regards to life in the mesopelagic zone. The first is the general colouring of species. Very little light reaches the zone, and the only wavelength in the visible spectrum that the length is the red wave. Because of this, most zooplankton species (like krill and shrimp) are red or orange, which at these depths is equivalent to black. This renders them almost invisible against the water. Fish are either black or red for the same reason, or silver to reflect the little light than can penetrate. Those that take part in <a href="#diel">vertical migrations</a> may be countershaded - having dark colouring on top for predators looking down, but lighter bellies.</p><p>
+            The <b>mesopelagic</b> has a very exciting nickname - the twilight zone. As mentioned above, the <b>mesopelagic</b> is a beautiful transitionary layer between light and dark, and its emhabitants cope with that in different ways. The eyes of <b>mesopelagic species</b> give us huge insight into that - the fact they have retained their eyes does prove that light is used at these depths. As we venture into the <a href="{{url_for('bathy_page')}}">bathypelagic</a>, we encounter more eyeless species. Here, though, life uses light in a magical way. Augmenting the sunlight that does reach into these depths is the light created by the <b>mesopelagic</b> species themselves using a phenomenon called <b>bioluminescence.</b>
+            </p>
+            <p><b>Bioluminescence</b> is the ability for an organism to create and emit its own light. On land, we see this in species like fireflies and glowbugs - but in the <b>mesopelagic</b> it is believed up to 90% to extant species can produce their own light. Some produce it purely to aid their own vision, while others use it to attract their own species for mating, or safety. Some use it as camouflage, concealing their silhouette. The most famous use of bioluminescence though is probably attributed to the terrifying anglerfish - fish who use a bioluminescent fin ray as a lure to attract other fish. The smallness of it encourages creatures of all sizes to come and investigate, at which point the anglerfish will strike. The bulb is not the only adaptation the Anglerfish has developed though, and rather than waste an opportunity to attack, or run the risk of attracting predators to itself rather than prey, the anglerfish has a set of sharp, curved teeth set in a huge jaw – allowing the anglerfish to catch, kill and consume prey much larger than it. </p>
+            <p>Many species in the <b>mesopelagic</b> look quite spooky - small in body but with huge eyes, massive jaws, and protruding teeth. They wouldn't look out of place in a horrir film, but they're suited perfectly for life in the Twilight Zone!</p>
+
+
+
+        <div class="blockquote" id="diel">
+            <h2> Did you know....?</h2>
+            <hr>
+            <img src="{{url_for('static', filename = 'images/diel.gif')}}" alt="An animation showing the diel vertical migration. The sun moves across the sky, while the fish create a sine wave below, peaking at the darkest points and troughing at the brightest">
+            <h5>The Diel Vertical Migration - Image from NASA</h5><hr>
+            <p> We mentioned that <b>some</b> species take part in vertical migrations - but we should emphasise how many individual ogranisms do! There are so many of these organisms, they created something known as the Deep Scattering Layer; to SONAR, this layer of organisms actually reflects back as a surface. The majority of the layer is made of lanternfish, and it's their swim bladders that create the impenertrable layer. In World War II, sonar operators were baffled by the apparent false floor in the ocean, which changed depths depending on the time of day! </p>
+
+        </div>
+
+
+
+    </div>
+    <script src="{{url_for('static', filename = 'script.js')}}"></script>
+    <script src="{{url_for('static', filename = 'scriptb.js')}}"></script>
+    {% endblock %}

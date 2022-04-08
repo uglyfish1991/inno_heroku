@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}
+- Abyssopelagic
+{% endblock %}
+
+{% block body %}
+
+<body class="abyss animate-in">
+    {% endblock %}
+
+    {% block content %}
+    <h1>The Abyssopelagic</h1>
+    <h5>The Abyss | 4000m - 6000m Deep | Aphotic Zone</h5>
+    <div class="inner">
+        <hr>
+        <div class="polaroidr">
+            <h4>Species Profile:</h4> <img src="{{url_for('static', filename = 'images/whale.png')}}" id="hagfish" alt="an illustration of a whale skeleton. When you move your mouse over it, hagfish appear">
+            <hr>
+            <b>Name: </b>{{fish.name}}<br>
+            <b>Scientific Name: </b>{{fish.bio}}<br>
+            <b>Size: </b>{{fish.size}}<br>
+            <b>Diet: </b>{{fish.food}}<br>
+            <b>Features: </b>{{fish.feat}}<br>
+            <hr>
+        </div>
+
+        <p>Very rarely have we had the chance to explore the very bottom of the ocean - the <b>abbyssopelagic.</b> The
+            <b>abbyssopelagic</b> is the name given to depths of over 4,000m. The only deeper zones are trenches.
+        </p>
+
+
+        <p>For as dark, cold, and pressuring as the <a href="{{url_for('bathy_page')}}">bathypelagic</a> is, the
+            <b>abbyssopelagic</b> is darker, colder, and heavier. Even oxygen is a rarity - the only source being from
+            melted polar ice. Above the sea floor is a layer that is totally devoid of oxygen, a complete death trap for
+            many organisms. It is one of the most hostile, most unknown places on our planet. Very few things can
+            withstand the immense pressure of the abyss and this makes exploration and study very hard. But not
+            impossible.</p>
+        <p>Food is scarce in the abyss, and like in the <a href="{{url_for('meso_page')}}">mesopelagic</a> and <a
+                href="{{url_for('bathy_page')}}">bathypelagic</a>, organisms rely on food falling from above. Most
+            abyssal species actually stay close to the sea floor, where the material comes to a rest on the bed. While
+            most of this food isn't of significant size, occasionally a great loss to the <a
+                href="{{url_for('epi_page')}}">epipelagic</a> can create a whole new ecosystem inside the abyss. </a>
+        </p>
+        <p>A whale fall is the term given to describe a whale carcass that has fallen to the ocean floor - especially
+            when the ocean floor is in bathyal or abyssal depths. While in shallow waters a whale carcass would be
+            picked apart very quickly, in the sparsely populated abyss, a whale fall can sustain an ecosystem for years.
+            Of course, whales aren't the only large creature capable of dying and coming to rest on the ocean floor -
+            but whale falls seem to be unique in their ability to not just provide a feeding ground, but sustain life in
+            a varity of ways. A whale fall has four stages:
+        <ul>
+            <li>Stage 1 - the body has fallen to the floor and scavengers consume the carcass. The carcass can be
+                "clean" within a few months, but could last up to nearly two years.</li>
+            <li>Stage 2 - opportunstic organisms begin to inhabit the bones, feeding on any soft tissue remaining, and
+                any soft tissue that might have been left by the scavengers. The remaining tissue can sustain these small organisms for nearly 5 years.</li>
+            <li>Stage 3 - bacteria break down lipids and fats in the bones of the whale. They give out a toxic compound, <b>hydrogen sulfide</b> so only tough, resistent bacteria can survive. This forms a bacterial mat, on which clams, snails and mussels can feed. This stage can last up to 100 years.</li>
+            <li>Stage 4 - the final stage involves the drained skeleton becoming a reef. The remaining mineral is the only source of enrichment now, and provides a substrate for filter feeders.</li>
+        </ul>
+        </p>
+
+    <p>
+        It is easy to see how whale falls provide nutrition to the deep, and whale falls are surprisingly common. There are believed to be enough whale falls to space them across the sea floor around 7 miles apart. Species are evolving to survive on the falls, and scientists have even hypothesised that juvinelles may grow up moving from whale fall to whale fall.
+    </p>
+
+    <p>
+        There is something even more interesting than whale fall helping life survive in the depths of the oceans. The <a
+        href="{{url_for('epi_page')}}">epipelagic</a> is home to autotrophic species and hetrotrophic species. So is the <b>abbyssopelagic</b> - but here, the autotrophs are not photosynthetic, but <b>chemosynthetic</b> - they create energy through chemical reactions. This reactions take place around <b>hydrothermal vents</b>. These are fissures in the crust, which allow the icy seawater to seep through to hot magma beneath. The magma heats the water, but coesn't boil it because of the pressure, and causes these vents. These vents are surrounded by chemosynthetic organisms, meaning there are actually autotrophic species down in the deep.
+    </p>
+
+        <div class="blockquote">
+            <h2> Did you know....?</h2>
+            <hr>
+            <img src="{{url_for('static', filename = 'images/plastic.jpg')}}" alt="Plastic netting on the ocean floor, with orange organisms growing on it">
+            <h5>Plastic netting on the ocean floor</h5><hr>
+            <p>Though our exploration of the abyss isn't as complete as other ocean zones, our impact has still been felt there, and not in a good way. Shockingly, but not surprisingly, our plastic pollution has made its way to the ocean floor - 6,000m deep. Species here have evolved to eat anything that drops from above them, and the energy they expand doing this is wasted as the plastic provides nothing. It is disgusting to realise that even life so far deep below the surface isn't free from the repercussions of our relience on plastic.</p>
+
+        </div>
+
+
+
+    </div>
+    <script src="{{url_for('static', filename = 'script.js')}}"></script>
+    <script src="{{url_for('static', filename = 'scriptb.js')}}"></script>
+    {% endblock %}

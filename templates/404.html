@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+- 404
+{% endblock %}
+
+{% block body %}
+
+<body class="home animate-in">
+    {% endblock %}
+
+    {% block content %}
+    <h1>Error</h1>
+    <h5>"The page you requested was not found"</h5>
+    <div class="inner">
+        <hr>
+        <p>Please use the links above to continue exploring the ocean!
+
+        </p>
+
+
+
+    </div>
+    <script src="{{url_for('static', filename = 'script.js')}}"></script>
+    {% endblock %}

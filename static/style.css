@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Cabin:wght@500&family=Caveat:wght@500&family=Cormorant+Infant&family=Roboto&family=Roboto+Slab:wght@500&display=swap");
+.home {
+  background-image: url("images/interbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.epi {
+  background-image: url("images/epibg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.meso {
+  background-image: url("images/mesobg.jpg");
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.bathy {
+  background-image: url("images/bathybg.jpg");
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.abyss {
+  background-image: url("images/abybg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 1.2%;
+}
+
+h1 {
+  font-size: 3vw;
+  color: #427070;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 3px;
+}
+
+h2 {
+  font-size: 2.4vw;
+  font-family: "Caveat", cursive;
+  color: #427070;
+  text-align: center;
+  margin-top: 0.1%;
+  margin-bottom: 0.1%;
+}
+
+h4 {
+  font-family: "Caveat", cursive;
+  font-size: 1.9vw;
+  margin-top: 0.1%;
+  margin-bottom: 0.1%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-variant: small-caps;
+  text-align: center;
+  margin: 0px;
+}
+
+hr {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+b {
+  color: #2889c5;
+}
+
+.my_navbar {
+  width: 100%;
+  height: 7vh;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  display: none;
+}
+
+.my_navbar a {
+  font-size: 2vw;
+  font-family: "Roboto Slab", serif;
+  font-variant: small-caps;
+  color: #3b3b3b;
+  text-decoration: none;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  border-bottom: 3px solid transparent;
+}
+
+.my_navbar a:hover {
+  border-bottom: 3px solid #e94a10;
+}
+
+.content {
+  height: 94vh;
+  padding: 1%;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
+  overflow: auto;
+}
+
+.center {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.inner {
+  display: block;
+}
+
+.inner img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 10px white solid;
+}
+
+.inner a {
+  color: #e94a10;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.inner a:hover {
+  color: #2889c5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.polaroidr {
+  float: right;
+  width: 27%;
+  background-color: white;
+  border: rgba(255, 255, 255, 0.7) 3px solid;
+  -webkit-box-shadow: 7px 7px rgba(128, 128, 128, 0.514);
+          box-shadow: 7px 7px rgba(128, 128, 128, 0.514);
+  padding: 1%;
+  margin: 0.5%;
+}
+
+.polaroidr img {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.polaroidl {
+  float: left;
+  width: 27%;
+  background-color: white;
+  border: rgba(255, 255, 255, 0.7) 3px solid;
+  -webkit-box-shadow: 7px 7px rgba(128, 128, 128, 0.514);
+          box-shadow: 7px 7px rgba(128, 128, 128, 0.514);
+  padding: 1%;
+  margin: 0.5%;
+}
+
+.polaroidl img {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.blockquote {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 3px solid #e94a10;
+  padding: 2%;
+  margin-top: 2%;
+  width: 80%;
+}
+
+.blockquote img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.animate-in {
+  -webkit-animation: fadeIn .5s ease-in;
+  animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#particle-frame {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  /* width: 100%;
+    height: 100%; */
+}
+
+particle-1, particle-2 {
+  display: block;
+  position: absolute;
+}
+
+/*  Color  Variations */
+particle-1 {
+  background-color: #cde7f7;
+  -webkit-box-shadow: 1px 1px 10px 2px #0ff;
+          box-shadow: 1px 1px 10px 2px #0ff;
+}
+
+particle-2 {
+  background-color: #61e978;
+  -webkit-box-shadow: 1px 1px 10px 2px #48ff00;
+          box-shadow: 1px 1px 10px 2px #48ff00;
+}
+
+@media (max-width: 500px) {
+  .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .my_navbar {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+  .polaroidr, .polaroidl {
+    width: 80%;
+    background-color: white;
+    border: rgba(255, 255, 255, 0.7) 3px solid;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
